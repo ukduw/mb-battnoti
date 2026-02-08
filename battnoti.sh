@@ -9,7 +9,7 @@
 
 #!/bin/bash
 
-STATE_FILE="/temp/low_battnoti"
+STATE_FILE="/temp/low_battnoti"     # note: does not persist over reboot; can lead to edge case...
 
 BATTERY=$(pmset -g batt | grep -o "[0-9]\+%" | tr -d '%')
 
