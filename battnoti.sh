@@ -14,7 +14,12 @@ STATE_FILE="/temp/low_battnoti"
 BATTERY=$(pmset -g batt | grep -o "[0-9]\+%" | tr -d '%')
 
 if [ "$BATTERY" -le 20 ]; then
-    osascript -e 'display notification "Battery is at '"$BATTERY"'%, buster" with title "Chaa deen la..."'
+    if [ ! -f "$STATE_FILE" ]; then
+        osascript -e 'display notification "Battery is at '"$BATTERY"'%, buster" with title "Chaa deen la..."'
+        touch "$STATE_FILE"
+    fi
+else
+    rm -f "$STATE_FILE"     # reset noti state when battery above threshold
 fi
 
 
