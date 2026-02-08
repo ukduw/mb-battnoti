@@ -6,7 +6,10 @@
 # battery info - pmset, e.g. pmset -g batt
 # noti - osascript
 
+
 #!/bin/bash
+
+STATE_FILE="/temp/low_battnoti"
 
 BATTERY=$(pmset -g batt | grep -o "[0-9]\+%" | tr -d '%')
 
