@@ -14,7 +14,7 @@ if [ "$BATTERY" -le 20 ]; then
         touch "$STATE_FILE"
     fi
 else
-    rm -f "$STATE_FILE"     # reset noti state when battery above threshold
+    rm -f "$STATE_FILE"
 fi
 
 
