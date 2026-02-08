@@ -31,3 +31,5 @@ fi
     # put in ~/Library/LaunchAgents/com.mb.battnoti.plist
     # launchctl load ~/Library/LaunchAgents/com.mb.battnoti.plist
     # launchctl unload ~/Library/LaunchAgents/com.mb.battnoti.plist
+
+    # load deprecated...? use bootstrap
