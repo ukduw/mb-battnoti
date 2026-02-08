@@ -24,10 +24,10 @@ fi
     # load it with launchctl
 
 # bash script
-    # put in ~/bin/battnoti.sh
-    # chmod +x ~/bin/battnoti.sh
+    # put in usr/local/bin/battnoti.sh
+    # chmod +x usr/local/bin/battnoti.sh
 
 # plist
-    # put in ~/Library/LaunchAgents/com.username.battnoti.plist
-    # launchctl load ~/Library/LaunchAgents/com.username.battnoti.plist
-    # launchctl unload ~/Library/LaunchAgents/com.username.battnoti.plist
+    # put in ~/Library/LaunchAgents/com.mb.battnoti.plist
+    # launchctl load ~/Library/LaunchAgents/com.mb.battnoti.plist
+    # launchctl unload ~/Library/LaunchAgents/com.mb.battnoti.plist
