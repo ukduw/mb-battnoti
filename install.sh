@@ -11,3 +11,6 @@ SCRIPT_DEST="/usr/local/bin/$SCRIPT_NAME"
 PLIST_DEST="$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
 
 
+mkdir -p /usr/local/bin
+mkdir -p "$HOME/Library/LaunchAgents"
+
