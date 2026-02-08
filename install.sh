@@ -14,3 +14,6 @@ PLIST_DEST="$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
 mkdir -p /usr/local/bin
 mkdir -p "$HOME/Library/LaunchAgents"
 
+cp "$SCRIPT_SRC" "$SCRIPT_DEST"
+cp "$PLIST_SRC" "$PLIST_DEST"
+
