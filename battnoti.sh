@@ -1,8 +1,3 @@
-# mac - launchd + LaunchAgent, not systemd
-    # write script
-    # create .plist file
-    # load it with launchctl
-
 # battery info - pmset, e.g. pmset -g batt
 # noti - osascript
 
@@ -23,8 +18,14 @@ else
 fi
 
 
-# put in ~/bin/battnoti.sh
-# chmod +x ~/bin/battnoti.sh
+# mac - launchd + LaunchAgent, not systemd
+    # write script
+    # create .plist file
+    # load it with launchctl
+
+# bash script
+    # put in ~/bin/battnoti.sh
+    # chmod +x ~/bin/battnoti.sh
 
 # plist
     # put in ~/Library/LaunchAgents/com.username.battnoti.plist
