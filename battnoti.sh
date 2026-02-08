@@ -17,3 +17,8 @@ fi
 
 # put in ~/bin/battnoti.sh
 # chmod +x ~/bin/battnoti.sh
+
+# plist
+    # put in ~/Library/LaunchAgents/com.username.battnoti.plist
+    # launchctl load ~/Library/LaunchAgents/com.username.battnoti.plist
+    # launchctl unload ~/Library/LaunchAgents/com.username.battnoti.plist
