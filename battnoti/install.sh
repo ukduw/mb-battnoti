@@ -24,3 +24,6 @@ chmod 644 "$PLIST_DEST"
 launchctl bootout gui/$(id -u) "$PLIST_DEST" 2>/dev/null || true    # unload if already loaded; reproducible
 
 launchctl bootstrap gui/$(id -u) "$PLIST_DEST"
+
+
+# mkdir if directories non-existent > cp over files, src to dest dir > chmod for executable > unload then load plist with launchctl
