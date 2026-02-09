@@ -1,7 +1,3 @@
-# battery info - pmset, e.g. pmset -g batt
-# noti - osascript
-
-
 #!/bin/bash
 
 STATE_FILE="/temp/low_battnoti"     # note: does not persist over reboot; can lead to edge case...
@@ -16,6 +12,10 @@ if [ "$BATTERY" -le 20 ]; then
 else
     rm -f "$STATE_FILE"
 fi
+
+
+# battery info - pmset, e.g. pmset -g batt
+# noti - osascript
 
 
 # mac - launchd + LaunchAgent, not systemd
