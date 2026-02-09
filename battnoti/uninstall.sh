@@ -2,6 +2,7 @@
 
 SERVICE_NAME="com.mb.battnoti"
 
+
 launchctl bootout gui/$(id -u) "$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
 
 rm -f "$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
