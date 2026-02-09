@@ -17,7 +17,6 @@ fi
 # battery info - pmset, e.g. pmset -g batt
 # noti - osascript
 
-
 # mac - launchd + LaunchAgent, not systemd
     # write script
     # create .plist file
