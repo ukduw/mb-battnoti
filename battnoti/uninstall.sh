@@ -8,4 +8,7 @@ rm -f "$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
 rm -f "/usr/local/bin/battnoti.sh"
 
 
+echo "Successfully uninstalled"
+
+
 # unload service > remove plist and script
