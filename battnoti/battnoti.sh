@@ -1,6 +1,7 @@
 #!/bin/bash
 
-STATE_FILE="/temp/low_battnoti"     # note: does not persist over reboot; can lead to edge case...
+STATE_FILE20="/temp/low_battnoti20"     # note: does not persist over reboot; can lead to edge case...
+STATE_FILE10="/temp/low_battnoti10"
 
 BATTERY=$(pmset -g batt | grep -o "[0-9]\+%" | tr -d '%')
 
