@@ -10,6 +10,11 @@ if [ "$BATTERY" -le 20 ]; then
         osascript -e 'display notification "Battery is at '"$BATTERY"'%, buster" with title "🪫 Chaa deen la..."'
         touch "$STATE_FILE20"
     fi
+elif [ "$BATTERY" -le 10 ]; then
+    if [ ! -f "$STATE_FILE10" ]; then
+        osascript -e 'display notification "⚠️ BATTERY AT '"$BATTERY"'% ⚠️" with title "🪫 CHAA DEEN AH!"'
+        touch "$STATE_FILE10"
+    fi
 else
     rm -f "$STATE_FILE20"
     rm -f "$STATE_FILE10"
