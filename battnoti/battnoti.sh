@@ -6,12 +6,12 @@ STATE_FILE10="/temp/low_battnoti10"
 BATTERY=$(pmset -g batt | grep -o "[0-9]\+%" | tr -d '%')
 
 if [ "$BATTERY" -le 20 ]; then
-    if [ ! -f "$STATE_FILE" ]; then
+    if [ ! -f "$STATE_FILE20" ]; then
         osascript -e 'display notification "Battery is at '"$BATTERY"'%, buster" with title "🪫 Chaa deen la..."'
-        touch "$STATE_FILE"
+        touch "$STATE_FILE20"
     fi
 else
-    rm -f "$STATE_FILE"
+    rm -f "$STATE_FILE20"
 fi
 
 
