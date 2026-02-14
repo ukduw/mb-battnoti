@@ -12,6 +12,7 @@ if [ "$BATTERY" -le 20 ]; then
     fi
 else
     rm -f "$STATE_FILE20"
+    rm -f "$STATE_FILE10"
 fi
 
 
