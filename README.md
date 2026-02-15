@@ -18,3 +18,11 @@ plist
 - launchctl load ~/Library/LaunchAgents/com.mb.battnoti.plist
 - launchctl unload ~/Library/LaunchAgents/com.mb.battnoti.plist
     - load deprecated...? use bootstrap/bootout
+
+
+install.sh
+- mkdir if directories non-existent > cp over files, src to dest dir > chmod for executable > unload then load plist with launchctl
+
+uninstall.sh
+- unload service > remove plist and script
+
