@@ -1,4 +1,5 @@
 placeholder
+- problem it solves, how it works, how to use it...
 
 
 battery info - pmset, e.g. pmset -g batt   
