@@ -5,7 +5,7 @@ SCRIPT_NAME="battnoti.sh"
 SERVICE_NAME="com.mb.battnoti"
 
 SCRIPT_SRC="$(cd "$(dirname "$0")" && pwd)/$SCRIPT_NAME"
-PLIST_SRC="$(cd "(dirname "$0")" && pwd)/$SERVICE_NAME"
+PLIST_SRC="$(cd "$(dirname "$0")" && pwd)/$SERVICE_NAME"
 
 SCRIPT_DEST="/usr/local/bin/$SCRIPT_NAME"
 PLIST_DEST="$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
@@ -21,9 +21,9 @@ chmod +x "$SCRIPT_DEST"
 chmod 644 "$PLIST_DEST"
 
 
-launchctl bootout gui/$(id -u) "$PLIST_DEST" 2>/dev/null || true    # unload if already loaded; reproducible
+launchctl bootout user/$(id -u) "$PLIST_DEST" 2>/dev/null || true    # unload if already loaded; reproducible
 
-launchctl bootstrap gui/$(id -u) "$PLIST_DEST"
+launchctl bootstrap user/$(id -u) "$PLIST_DEST"
 
 
 echo "Successfully installed"
