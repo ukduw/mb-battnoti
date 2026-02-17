@@ -4,6 +4,9 @@ set -e
 SCRIPT_NAME="battnoti.sh"
 SERVICE_NAME="com.mb.battnoti"
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+xattr -dr com.apple.quarantine "$SCRIPT_DIR"
+
 SCRIPT_SRC="$(cd "$(dirname "$0")" && pwd)/$SCRIPT_NAME"
 PLIST_SRC="$(cd "$(dirname "$0")" && pwd)/$SERVICE_NAME"
 
