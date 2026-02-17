@@ -4,12 +4,12 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.mb.battnoti</string>
+  <string>com.mb.battnoti.plist</string>
 
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>usr/local/bin/battnoti.sh</string>
+    <string>/usr/local/bin/battnoti.sh</string>
   </array>
 
   <key>StartInterval</key>
@@ -21,5 +21,4 @@
   <key>KeepAlive</key>
   <true/>
 </dict>
-</plist>
 </plist>
