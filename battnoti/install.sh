@@ -2,7 +2,7 @@
 set -e
 
 SCRIPT_NAME="battnoti.sh"
-SERVICE_NAME="com.mb.battnoti"
+SERVICE_NAME="com.mb.battnoti.plist"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 xattr -dr com.apple.quarantine "$SCRIPT_DIR"
@@ -11,7 +11,7 @@ SCRIPT_SRC="$(cd "$(dirname "$0")" && pwd)/$SCRIPT_NAME"
 PLIST_SRC="$(cd "$(dirname "$0")" && pwd)/$SERVICE_NAME"
 
 SCRIPT_DEST="/usr/local/bin/$SCRIPT_NAME"
-PLIST_DEST="$HOME/Library/LaunchAgents/$SERVICE_NAME.plist"
+PLIST_DEST="$HOME/Library/LaunchAgents/$SERVICE_NAME"
 
 
 mkdir -p /usr/local/bin
